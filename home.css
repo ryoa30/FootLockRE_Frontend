@@ -1,0 +1,325 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.kotak{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #ffeaed;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6513b;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    margin: 10px 0;
+    padding-left: 5%;
+    color: #ffffff;
+}
+
+.menu{
+    display: none;
+}
+
+
+.nav-bar{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: 0.2s;
+    margin: 0 2px;
+}
+
+.nav-bar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background: #ffffff;    
+}
+
+.nav-bar ul li a.active{
+    color: rgb(0, 0, 0);
+    background: #ffffff;  
+}
+
+.banner{
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.pembatas{
+    height: 5px;
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1%;
+    background: #f6513b;
+}
+
+.gerak {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  
+.keterangan{
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.keterangan2{
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.harga{
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+  .geser {
+    display: none;
+    width: 100%;
+    
+  }
+  
+  .geser img {
+    width:30%;
+    height: auto;
+    border-radius: 30px;
+    /* border: 2px groove #1b2741; */
+  }
+  
+  .sebelum,
+  .sesudah {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    background-color: #000000;
+    color: white;
+    margin-top: -22px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    overflow: hidden;
+  }
+  
+  .sebelum {
+    left: 10%;
+  }
+  
+  .sesudah {
+    right: 10%;
+  }
+
+  .sesudah:hover, .sebelum:hover{
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  footer{
+    background: #f6513b;
+    height: auto;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 40px;
+    color: white;
+  }
+
+  .footcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footcon h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-weight: bold;
+}
+  
+  .footcon p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .socials li{
+    margin: 0 10px;
+  }
+
+  .socials a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+
+  .socials a:hover i{
+    color: #00ffff;
+  }
+
+  .footbot{
+    background: #000000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footbot p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  
+
+@media only screen and (max-width: 1320px) {
+    .logo{
+        padding-left: 2%;
+    }
+    nav ul li{
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    .logo{
+        padding-left: 1%;
+    }
+
+    nav ul li{
+        margin-right: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo{
+        padding-left: 1%;
+    }
+
+    nav ul li{
+        margin-right: 5px;
+    }
+    .geser img{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .geser img{
+        width: 56%;
+    }
+    
+    .menu{
+        margin-right: 10px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu .garis{
+        width: 25px;
+        height: 2px;
+        background: #ffffff;
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0px;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #f6513b;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .nav-bar.active {
+        height: 425px;
+    }
+
+    .nav-bar ul li{
+        display: block;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul li{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+        padding: 15px 30px;
+    }
+}

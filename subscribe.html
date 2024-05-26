@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subscribe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="subscribe.js"></script>
+    <title>FootLockRE Subscribe</title>
+</head>
+<body>
+    <div class="kotak">
+        <header>
+            <img src="logo.png" alt="logo" class="logo">
+            <div class="menu">
+                <div class="garis"></div>
+                <div class="garis"></div>
+                <div class="garis"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                   <li><a href="subscribe.html"  class="active">Subscribe</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Subscribe</h1>
+            <form action="">
+                <br>
+                <input type="text" name="username" id="username" placeholder="Enter your name">
+                <br><br>
+        
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+                <br> <br>
+        
+                <input type="number" name="phonenumber" id="phonenumber" placeholder="Enter your phone number">
+                <br> <br>
+        
+                <label for="nationality">Country</label><br>
+                <select name="nationality" id="nationality">
+                    <option value="empty">Choose One</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Korea">Korea</option>
+                    <option value="America">America</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Japan">Japan</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br> <br>
+                <div class="cb-container">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">I agree to the terms and condition</label>
+                </div>
+                
+                <br><br>
+                <div class="button-container">
+                    <button type="submit" onclick="validate(event)">Create Account</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footcon">
+            <h3>FootLockRE</h3>
+            <p>Find out more about FootLockRE in our socials
+            </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footbot">
+            <p>copyright &copy;2022 FootLockRE</p>
+        </div>
+    </footer>
+
+    <script>
+        menu = document.querySelector(".menu");
+        menu.onclick = function (){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+        }
+    </script>
+</body>
+</html>
