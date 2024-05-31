@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootLockRE Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="home.js"></script>
+</head>
+<body>
+    <div class="kotak">
+        <header>
+            <img src="logo.png" alt="logo" class="logo">
+            <div class="menu">
+                <div class="garis"></div>
+                <div class="garis"></div>
+                <div class="garis"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                   <li><a href="subscribe.html">Subscribe</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <div>
+                <img src="banner.png" alt="banner" class="banner">
+                <div class="pembatas"></div>
+            </div>
+    
+            <div class="gerak">
+                <div class="geser">
+                    <div class="keterangan2">POPULAR SHOES</div>
+                    <img src="sepatu1.png" alt="sepatu 1">
+                    <div class="keterangan">Air Jordan 1 FlyEase</div>
+                    <div class="harga">Rp 2.099.000</div>
+                </div>
+                <div class="geser">
+                    <div class="keterangan2">POPULAR SHOES</div>
+                    <img src="sepatu2.png" alt="sepatu 2">
+                    <div class="keterangan">Jordan Series Mid</div>
+                    <div class="harga">Rp 1.459.000</div>
+                </div>
+                <div class="geser">
+                    <div class="keterangan2">LATEST SHOES</div>
+                    <img src="sepatu3.png" alt="sepatu 3">
+                    <div class="keterangan">Air Jordan 2 Retro</div>
+                    <div class="harga">Rp 2.628.000</div>
+                </div>
+                <button class="sebelum"><</button>
+                <button class="sesudah">></button>
+                <div class="pembatas"></div>
+            </div>
+        </article>
+          
+        <footer>
+            <div class="footcon">
+                <h3>FootLockRE</h3>
+                <p>Find out more about FootLockRE in our socials
+                </p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footbot">
+                <p>copyright &copy;2022 FootLockRE</p>
+            </div>
+        </footer>
+
+
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function (){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+
+            }
+        </script>
+    </div>
+</body>
+</html>
